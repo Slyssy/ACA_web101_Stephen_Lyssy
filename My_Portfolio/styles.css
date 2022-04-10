@@ -24,23 +24,20 @@ body {
   margin: auto;
 }
 
+header {
+  background-color: #151111;
+}
 .name {
-  color: var(--titles);
+  color: var(--gainsboro);
   font-size: 40px;
   font-weight: 700;
 }
 
 .position {
-  color: var(--titles);
+  color: var(--gainsboro);
   font-size: 18px;
   font-weight: 700;
 }
-/* header {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin-top: 5%;
-} */
 
 main {
   width: 100%;
@@ -71,14 +68,16 @@ main {
 
 .navbar-links li a {
   text-decoration: none;
-  color: var(--titles);
+  color: var(--gainsboro);
   font-size: 1.3rem;
   padding: 3.2rem 3rem;
   display: block;
   text-align: center;
+  transition: all 0.3s ease;
 }
 
 .navbar-links li a:hover {
+  transition: all 0.3s ease;
   font-size: 1.5rem;
   color: var(--turquoise);
 }
@@ -135,10 +134,12 @@ main {
 .main-links a {
   text-decoration: none;
   color: whitesmoke;
+  transition: all 0.3s ease;
 }
 
 .main-links a:hover {
-  font-size: 110%;
+  font-size: 120%;
+  transition: all 0.3s ease;
 }
 .resume-link {
   background-color: var(--red);
@@ -186,8 +187,8 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--red);
-  color: whitesmoke;
+  background-color: #151111;
+  color: var(--gainsboro);
 }
 
 .icons {
