@@ -341,6 +341,7 @@ footer {
   }
 
   footer {
+    margin-top: 1.5rem;
     height: auto;
     flex-direction: column;
   }
