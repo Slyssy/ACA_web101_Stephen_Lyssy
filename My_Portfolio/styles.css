@@ -130,9 +130,16 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.main-links a {
+  text-decoration: none;
   color: whitesmoke;
 }
 
+.main-links a:hover {
+  font-size: 110%;
+}
 .resume-link {
   background-color: var(--red);
   height: 140px;
