@@ -1,4 +1,6 @@
-Instagram Picture Author
+# Picture Credits
+
+Instagram Picture Author:
 <a href="https://www.flaticon.com/free-icons/instagram" title="instagram
 icons">Instagram icons created by Pixel perfect - Flaticon</a>
 
