@@ -1,0 +1,154 @@
+:root {
+  --red: #e83656ff;
+  --titles: #4d4d4dff;
+  --turquoise: #62cfd3ff;
+  --gainsboro: #dbd9d9ff;
+  --khaki: #c8be68ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #151111;
+}
+body {
+  /* font-family: 'Inter', sans-serif;
+  font-family: 'Kaushan Script', cursive; */
+  font-family: 'Roboto Slab', serif;
+  background-color: var(--gainsboro);
+  max-width: 1300px;
+  margin: auto;
+}
+header {
+  background-color: #151111;
+}
+.name {
+  color: var(--gainsboro);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.position {
+  color: var(--gainsboro);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.navbar {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-self: flex-start;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: var(--gainsboro);
+  font-size: 1.3rem;
+  padding: 3.2rem 3rem;
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+  color: var(--turquoise);
+}
+
+.toggle-button {
+  position: absolute;
+  top: 3.5rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 2px;
+  width: 100%;
+  background-color: var(--titles);
+  border-radius: 10px;
+}
+
+/* iframe {
+  height: 100vh;
+  width: 100%;
+} */
+
+@media (max-width: 700px) {
+  body {
+    width: 100vw;
+    height: auto;
+  }
+  .logo {
+    display: block;
+    width: 100%;
+  }
+  .name {
+    font-size: 26px;
+    font-weight: 700;
+    margin-left: 1rem;
+  }
+
+  .position {
+    margin-left: 1rem;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+  .navbar-links li a {
+    padding: 0.7rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  /* iframe {
+    height: 100vh;
+    width: 100%;
+  } */
+}
