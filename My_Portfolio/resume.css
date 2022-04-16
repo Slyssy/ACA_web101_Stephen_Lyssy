@@ -27,6 +27,22 @@ body {
 header {
   background-color: #151111;
 }
+
+ul {
+  font-family: 'Alegreya Sans', sans-serif;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+li {
+  padding: 0.25rem 0;
+  line-height: 1.4rem;
+  list-style: square;
+}
+li:hover {
+  background-color: rgba(218, 165, 32, 0.115);
+}
 .name {
   color: var(--gainsboro);
   font-size: 40px;
@@ -56,6 +72,7 @@ header {
 
 .navbar-links li {
   list-style: none;
+  background: none;
 }
 
 .navbar-links li a {
@@ -98,6 +115,50 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.resume-navbar {
+  display: none;
+}
+
+.resume-navbar.sticky {
+  display: block;
+}
+.resume-links {
+  position: fixed;
+  top: 11rem;
+  left: 19.15rem;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  transition: 0.6s;
+  padding: 2rem 2rem;
+  background: #15111174;
+}
+
+.resume-navbar ul li {
+  list-style-type: none;
+}
+
+.resume-navbar ul li:hover {
+  background: none;
+}
+.resume-navbar ul li a {
+  color: white;
+}
+.resume-navbar ul li a:hover {
+  font-size: 1.5rem;
+  color: var(--turquoise);
+}
+
+.resume-navbar ul li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 0rem 1rem;
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
 }
 
 .upperCase {
@@ -168,21 +229,6 @@ a:active {
   font-weight: 100;
 }
 
-ul {
-  font-family: 'Alegreya Sans', sans-serif;
-  padding: 1rem 2rem;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-}
-
-li {
-  padding: 0.25rem 0;
-  line-height: 1.4rem;
-  list-style: square;
-}
-li:hover {
-  background-color: var(--khaki);
-}
 .company-name {
   font-weight: 300;
 }
