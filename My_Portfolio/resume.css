@@ -246,6 +246,33 @@ a:active {
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 300;
 }
+
+footer {
+  width: 100%;
+  height: 10rem;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--red);
+  color: var(--gainsboro);
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-top: 0px;
+}
+
+.icon {
+  width: 50px;
+  list-style-type: none;
+}
+
+.icon-img {
+  width: 50%;
+}
 @media (max-width: 700px) {
   body {
     width: 100vw;
@@ -305,5 +332,37 @@ a:active {
     flex-direction: column;
     justify-content: space-around;
     gap: 2rem;
+  }
+
+  footer {
+    margin-top: 1.5rem;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .footer-column-top {
+    margin-top: 1rem;
+    text-align: center;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer-column-middle {
+    margin-top: 1rem;
+    text-align: center;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer-column-bottom {
+    margin-top: 1rem;
+    text-align: center;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 }
