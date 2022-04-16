@@ -4,6 +4,7 @@ const profileQualifications = document.querySelector('#profile-qualifications');
 const profileQualificationsLink = document.querySelector(
   '#profile-qualifications-link'
 );
+const resumeNavbar = document.querySelector('.resume-navbar');
 
 //%Navbar toggle button event listener
 toggleButton.addEventListener('click', (e) => {
@@ -16,6 +17,7 @@ const resumeLinks = document.querySelector('.resume-links');
 //? Adding event listeners to common parent elements.
 resumeLinks.addEventListener('click', function (e) {
   e.preventDefault();
+  resumeNavbar.classList.remove('sticky');
   if (e.target.classList.contains('resume-link')) {
     const destinationID = e.target.getAttribute('href');
     document
