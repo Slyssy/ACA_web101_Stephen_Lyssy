@@ -232,6 +232,41 @@ footer {
 }
 
 /* %Projects HTML styling */
+.projects-navbar {
+  font-family: 'Alegreya Sans SC';
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects-title {
+  color: var(--goldenrod);
+  width: 30%;
+}
+
+.projects-navlinks {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.6rem;
+  color: var(--gainsboro);
+  list-style-type: none;
+}
+
+.projects-navlinks li a:link,
+.projects-navlinks li a:visited {
+  color: var(--gainsboro);
+  text-decoration: none;
+}
+
+.projects-navlinks li a:hover {
+  font-size: 1.8rem;
+  color: var(--turquoise);
+}
+
 section {
   width: 90%;
   margin: 3rem auto;
@@ -241,9 +276,6 @@ section {
   gap: 5%;
   background: rgba (0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
-}
-.projects-title {
-  color: var(--goldenrod);
 }
 
 .project-name {
@@ -257,6 +289,7 @@ section {
 .project-name a:visited {
   color: var(--gainsboro);
 }
+
 .project-description {
   font-family: 'Alegreya Sans';
   color: var(--gainsboro);
@@ -273,7 +306,7 @@ section {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
-  color: var(--turquoise);
+  color: var(--goldenrod);
 }
 /* !Breakpoints for Tablets and Small Laptops */
 @media only screen and (max-width: 960px) {

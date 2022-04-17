@@ -5,16 +5,14 @@ const profileQualificationsLink = document.querySelector(
   '#profile-qualifications-link'
 );
 const resumeNavbar = document.querySelector('.resume-navbar');
+const resumeLinks = document.querySelector('.resume-links');
 
-//%Navbar toggle button event listener
+//% Navbar toggle button event listener
 toggleButton.addEventListener('click', (e) => {
   e.preventDefault();
   navbarLinks.classList.toggle('active');
 });
 
-//%Smooth Scroll Function
-const resumeLinks = document.querySelector('.resume-links');
-//? Adding event listeners to common parent elements.
 resumeLinks.addEventListener('click', function (e) {
   e.preventDefault();
   resumeNavbar.classList.remove('sticky');
@@ -26,7 +24,7 @@ resumeLinks.addEventListener('click', function (e) {
   }
 });
 
-//%Sticky Navbar
+//% Sticky Navbar
 window.addEventListener('scroll', () => {
   const resumeNavbar = document.querySelector('.resume-navbar');
   resumeNavbar.classList.toggle('sticky', window.scrollY > 0);
