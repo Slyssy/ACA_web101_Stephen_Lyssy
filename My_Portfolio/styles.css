@@ -469,4 +469,36 @@ section {
     flex-direction: column;
     justify-content: space-between;
   }
+
+  #job-costing {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  #flood-map {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .project-name {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .project-paragraph {
+    width: 80%;
+    margin: auto;
+  }
+
+  .technologies {
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+
+  .carrousel-image {
+    width: 80%;
+    order: 3;
+  }
 }
