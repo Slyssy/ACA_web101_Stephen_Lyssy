@@ -55,178 +55,185 @@
         </nav>
       </header>
       <div class="projects-navbar">
-        <h1 class="projects-title">Check Out My Projects</h1>
+        <!-- <h1 class="projects-title">Check Out My Projects</h1>
         <ul class="projects-navlinks">
           <li><a href="#job-costing" class="project-link">Job Costing</a></li>
           <li>
             <a href="#flood-map" class="project-link">Horry County Flood Map</a>
           </li>
-        </ul>
+        </ul> -->
       </div>
-      <section id="job-costing">
-        <div class="project-description">
-          <h2 class="project-name">
-            <a target="_blank" href="https://github.com/Slyssy/Job-Costing-2.0"
-              >Job Costing Application</a
-            >
-          </h2>
-          <p class="project-paragraph">
-            This job costing tool is intended to be used by small contracting
-            companies to allow them to provide live updates to their project
-            stakeholders as well as closely track and monitor all expenses
-            associated with a project.
-            <br /><br />
-            This app will allow for the leads to see progress in the financial
-            and day to day workload by tracking and visualizing budgeted labor
-            expenses, material expenses, miscellaneous expenses and
-            subcontractor expenses, and comparing them to the actual values.
-            This limits the back and forth of chasing employees around for time
-            sheets and daily progress and trying to remember what expenses were
-            actually associated with the project. Knowing when a project is
-            exceeding budgeted expenses is often the first step to preventing a
-            project from becoming a major loss.
-          </p>
-          <ul class="thumbnails">
-            <li onclick="selectImageJobCosting(0)">
-              <img
-                src="./images/project-images/carousel0.png"
-                alt="Dashboard Image"
-                class="thumb-image"
-              />
-            </li>
-            <li onclick="selectImageJobCosting(1)">
-              <img
-                src="./images/project-images/carousel1.png"
-                alt="Map Image"
-                class="thumb-image"
-              />
-            </li>
-            <li onclick="selectImageJobCosting(2)">
-              <img
-                src="./images/project-images/carousel2.png"
-                alt="Image of Performance Graph"
-                class="thumb-image"
-              />
-            </li>
-            <li onclick="selectImageJobCosting(3)">
-              <img
-                src="./images/project-images/carousel3.png"
-                alt="Image of Estimate to Actual Graphs"
-                class="thumb-image"
-              />
-            </li>
-            <li onclick="selectImageJobCosting(4)">
-              <img
-                src="./images/project-images/carousel4.png"
-                alt="Image of Project Details Graph"
-                class="thumb-image"
-              />
-            </li>
-          </ul>
-          <ul class="technologies">
-            <li>Python</li>
-            <li>Flask</li>
-            <li>Psycopg2</li>
-            <li>SQL Alchemy</li>
-            <li>PostgresSQL</li>
-            <li>JavaScript & D3.js</li>
-            <li>HTML & CSS</li>
-            <li>Jinja</li>
-            <li>Bootstrap</li>
-            <li>Heroku</li>
-          </ul>
-        </div>
-        <img
-          src="./images/project-images/carousel0.png"
-          alt="Dashboard Image"
-          class="carousel-image"
-          id="job-costing-image"
-        />
-      </section>
-      <section id="flood-map">
-        <img
-          src="./images/project-images/carousel5.png"
-          alt=""
-          class="carousel-image"
-          id="flood-image"
-        />
-        <div class="project-description">
-          <h2 class="project-name">
-            <a
-              target="_blank"
-              href="https://horry-county-flood-map.herokuapp.com/"
-              >Horry County Flood Map</a
-            >
-          </h2>
-          <p class="project-paragraph">
-            For this project, I was tasked with using data collected by
-            canvassing, web scraping and collected from Horry County, South
-            Carolina. This data looked out reported flooding events and compared
-            that to flood zone data reported by FEMA. The intent of this study
-            was to determine if current flood zones accurately informed
-            consumers of their risk of flooding when purchasing houses in Horry
-            County.
-            <br /><br />
-            We used ArcGIS mapping software to show where reported flooding
-            events occurred in the previous 10+ years. We plotted those
-            converted addresses to latitude and longitude coordinates and
-            plotted those to a map that showed current FEMA flood zones. This
-            showed that there were many flood events in areas that according to
-            FEMA were not in flood zones. This is a strong indicator that the
-            FEMA flood zone maps need to be updated for this area.
-            <br /><br />
-            We also prepared many data visualizations that showed everything
-            from the amount of precipitation by weather station for a given
-            number of years to showing how land usage had changed between 1996
-            and 2016.
-          </p>
-          <ul class="thumbnails">
-            <li onclick="selectImageFlood(5)">
-              <img
-                src="./images/project-images/carousel5.png"
-                alt="Dashboard Image"
-                class="thumb-image"
-              />
-            </li>
-            <li onclick="selectImageFlood(6)">
-              <img
-                src="./images/project-images/carousel6.png"
-                alt="Map Image"
-                class="thumb-image"
-              />
-            </li>
-            <li onclick="selectImageFlood(7)">
-              <img
-                src="./images/project-images/carousel7.png"
-                alt="Image of Performance Graph"
-                class="thumb-image"
-              />
-            </li>
-            <li onclick="selectImageFlood(8)">
-              <img
-                src="./images/project-images/carousel8.png"
-                alt="Image of Estimate to Actual Graphs"
-                class="thumb-image"
-              />
-            </li>
-            <li onclick="selectImageFlood(9)">
-              <img
-                src="./images/project-images/carousel9.png"
-                alt="Image of Project Details Graph"
-                class="thumb-image"
-              />
-            </li>
-          </ul>
-          <ul class="technologies">
-            <li>JavaScript</li>
-            <li>D3.js</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>ArcGIS</li>
-            <li>Heroku</li>
-          </ul>
-        </div>
-      </section>
+      <div class="slider">
+        <section id="job-costing" class="slide slide--1">
+          <div class="project-description">
+            <h2 class="project-name">
+              <a
+                target="_blank"
+                href="https://github.com/Slyssy/Job-Costing-2.0"
+                >Job Costing Application</a
+              >
+            </h2>
+            <p class="project-paragraph">
+              This job costing tool is intended to be used by small contracting
+              companies to allow them to provide live updates to their project
+              stakeholders as well as closely track and monitor all expenses
+              associated with a project.
+              <br /><br />
+              This app will allow for the leads to see progress in the financial
+              and day to day workload by tracking and visualizing budgeted labor
+              expenses, material expenses, miscellaneous expenses and
+              subcontractor expenses, and comparing them to the actual values.
+              This limits the back and forth of chasing employees around for
+              time sheets and daily progress and trying to remember what
+              expenses were actually associated with the project. Knowing when a
+              project is exceeding budgeted expenses is often the first step to
+              preventing a project from becoming a major loss.
+            </p>
+            <ul class="thumbnails">
+              <li onclick="selectImageJobCosting(0)">
+                <img
+                  src="./images/project-images/carousel0.png"
+                  alt="Dashboard Image"
+                  class="thumb-image"
+                />
+              </li>
+              <li onclick="selectImageJobCosting(1)">
+                <img
+                  src="./images/project-images/carousel1.png"
+                  alt="Map Image"
+                  class="thumb-image"
+                />
+              </li>
+              <li onclick="selectImageJobCosting(2)">
+                <img
+                  src="./images/project-images/carousel2.png"
+                  alt="Image of Performance Graph"
+                  class="thumb-image"
+                />
+              </li>
+              <li onclick="selectImageJobCosting(3)">
+                <img
+                  src="./images/project-images/carousel3.png"
+                  alt="Image of Estimate to Actual Graphs"
+                  class="thumb-image"
+                />
+              </li>
+              <li onclick="selectImageJobCosting(4)">
+                <img
+                  src="./images/project-images/carousel4.png"
+                  alt="Image of Project Details Graph"
+                  class="thumb-image"
+                />
+              </li>
+            </ul>
+            <ul class="technologies">
+              <li>Python</li>
+              <li>Flask</li>
+              <li>Psycopg2</li>
+              <li>SQL Alchemy</li>
+              <li>PostgresSQL</li>
+              <li>JavaScript & D3.js</li>
+              <li>HTML & CSS</li>
+              <li>Jinja</li>
+              <li>Bootstrap</li>
+              <li>Heroku</li>
+            </ul>
+          </div>
+          <img
+            src="./images/project-images/carousel0.png"
+            alt="Dashboard Image"
+            class="carousel-image"
+            id="job-costing-image"
+          />
+        </section>
+        <section id="flood-map" class="slide slide--2">
+          <img
+            src="./images/project-images/carousel5.png"
+            alt=""
+            class="carousel-image"
+            id="flood-image"
+          />
+          <div class="project-description">
+            <h2 class="project-name">
+              <a
+                target="_blank"
+                href="https://horry-county-flood-map.herokuapp.com/"
+                >Horry County Flood Map</a
+              >
+            </h2>
+            <p class="project-paragraph">
+              For this project, I was tasked with using data collected by
+              canvassing, web scraping and collected from Horry County, South
+              Carolina. This data looked out reported flooding events and
+              compared that to flood zone data reported by FEMA. The intent of
+              this study was to determine if current flood zones accurately
+              informed consumers of their risk of flooding when purchasing
+              houses in Horry County.
+              <br /><br />
+              We used ArcGIS mapping software to show where reported flooding
+              events occurred in the previous 10+ years. We plotted those
+              converted addresses to latitude and longitude coordinates and
+              plotted those to a map that showed current FEMA flood zones. This
+              showed that there were many flood events in areas that according
+              to FEMA were not in flood zones. This is a strong indicator that
+              the FEMA flood zone maps need to be updated for this area.
+              <br /><br />
+              We also prepared many data visualizations that showed everything
+              from the amount of precipitation by weather station for a given
+              number of years to showing how land usage had changed between 1996
+              and 2016.
+            </p>
+            <ul class="thumbnails">
+              <li onclick="selectImageFlood(5)">
+                <img
+                  src="./images/project-images/carousel5.png"
+                  alt="Dashboard Image"
+                  class="thumb-image"
+                />
+              </li>
+              <li onclick="selectImageFlood(6)">
+                <img
+                  src="./images/project-images/carousel6.png"
+                  alt="Map Image"
+                  class="thumb-image"
+                />
+              </li>
+              <li onclick="selectImageFlood(7)">
+                <img
+                  src="./images/project-images/carousel7.png"
+                  alt="Image of Performance Graph"
+                  class="thumb-image"
+                />
+              </li>
+              <li onclick="selectImageFlood(8)">
+                <img
+                  src="./images/project-images/carousel8.png"
+                  alt="Image of Estimate to Actual Graphs"
+                  class="thumb-image"
+                />
+              </li>
+              <li onclick="selectImageFlood(9)">
+                <img
+                  src="./images/project-images/carousel9.png"
+                  alt="Image of Project Details Graph"
+                  class="thumb-image"
+                />
+              </li>
+            </ul>
+            <ul class="technologies">
+              <li>JavaScript</li>
+              <li>D3.js</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>ArcGIS</li>
+              <li>Heroku</li>
+            </ul>
+          </div>
+        </section>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
     </div>
   </body>
 </html>
