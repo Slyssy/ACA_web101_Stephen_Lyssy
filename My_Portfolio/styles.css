@@ -14,16 +14,15 @@
 }
 
 html {
-  background-color: #151111;
+  background-image: url('./images/backgroundImg.jpg');
+  background-size: 100%;
+  background-position: center;
 }
 body {
   /* font-family: 'Inter', sans-serif;
   font-family: 'Kaushan Script', cursive; */
   font-family: 'Roboto Slab', serif;
-  background-image: url('./images/backgroundImg.jpg');
-  min-height: 100vh;
-  background-size: cover;
-  background-position: center;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -270,7 +269,7 @@ footer {
 section {
   width: 90%;
   margin: 3rem auto;
-  /* padding: 10%; */
+  padding: 2%;
   display: flex;
   align-items: center;
   gap: 5%;
