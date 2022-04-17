@@ -297,8 +297,28 @@ section {
   line-height: 1.6;
 }
 
-.carrousel-image {
-  width: 30%;
+.carousel-image {
+  width: 40%;
+  box-shadow: 1px 1px 10px 5px rgba(66, 66, 66, 0.745);
+}
+
+.thumbnails {
+  margin-top: 2rem;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+}
+
+.thumbnails li {
+  width: 15%;
+  box-shadow: 1px 1px 10px 5px rgba(65, 64, 64, 0.745);
+}
+
+.thumbnails li img {
+  width: 100%;
+  cursor: pointer;
 }
 
 .technologies {
@@ -468,5 +488,37 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  #job-costing {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  #flood-map {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .project-name {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .project-paragraph {
+    width: 80%;
+    margin: auto;
+  }
+
+  .technologies {
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+
+  .carrousel-image {
+    width: 80%;
+    order: 3;
   }
 }
