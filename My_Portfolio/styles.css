@@ -507,6 +507,12 @@ section {
     gap: 3rem;
   }
 
+  #e-birds {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
   .project-name {
     font-size: 1.2rem;
     text-align: center;
