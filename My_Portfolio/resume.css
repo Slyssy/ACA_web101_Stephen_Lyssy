@@ -162,6 +162,21 @@ li:hover {
   transition: all 0.3s ease;
 }
 
+.close-icon {
+  width: 24px;
+  stroke: var(--gainsboro);
+  margin-left: 80%;
+}
+
+.close-icon:hover {
+  stroke: var(--goldenrod);
+  cursor: pointer;
+}
+
+.close-icon:active {
+  width: 22px;
+}
+
 .upperCase {
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 22px;
