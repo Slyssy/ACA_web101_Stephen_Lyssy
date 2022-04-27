@@ -31,17 +31,6 @@ body {
 header {
   background-color: #151111a3;
 }
-.name {
-  color: var(--gainsboro);
-  font-size: 40px;
-  font-weight: 700;
-}
-
-.position {
-  color: var(--gainsboro);
-  font-size: 18px;
-  font-weight: 700;
-}
 
 main {
   width: 90%;
@@ -52,6 +41,116 @@ main {
   gap: 5%;
   background: rgba (0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
+}
+
+footer {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #151111a3;
+  color: var(--gainsboro);
+}
+
+#container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#profile-pic {
+  width: 90%;
+  border-radius: 50%;
+  margin: 15% 10%;
+}
+
+.h1-main {
+  font-size: 7rem;
+  color: var(--goldenrod);
+}
+
+.h2-main {
+  font-size: 4rem;
+  color: var(--goldenrod);
+}
+
+.icon {
+  width: 50px;
+  list-style-type: none;
+}
+
+.icon-img {
+  width: 50%;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.main-links {
+  height: 12rem;
+  width: 80%;
+  /* margin: auto; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-links a {
+  text-decoration: none;
+  color: whitesmoke;
+  transition: all 0.3s ease;
+}
+
+.main-links a:hover {
+  font-size: 120%;
+  transition: all 0.3s ease;
+}
+.main-paragraph {
+  color: var(--gainsboro);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  width: 90%;
+  display: block;
+  margin-top: 10px;
+  background: rgba (0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.mySkill-link {
+  background-color: var(--goldenrod);
+  height: 140px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.myWork-link {
+  background-color: var(--turquoise);
+  height: 140px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.name {
+  color: var(--gainsboro);
+  font-size: 40px;
+  font-weight: 700;
 }
 
 .navbar {
@@ -89,6 +188,31 @@ main {
   color: var(--goldenrod);
 }
 
+.page-left {
+  width: 40%;
+}
+
+.page-right {
+  width: 60%;
+}
+
+.position {
+  color: var(--gainsboro);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.resume-link {
+  background-color: var(--red);
+  height: 140px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+}
+
 .toggle-button {
   position: absolute;
   top: 3.5rem;
@@ -106,131 +230,41 @@ main {
   background-color: var(--titles);
   border-radius: 10px;
 }
-/* This is an ID selector */
-#profile-pic {
-  width: 90%;
-  border-radius: 50%;
-  margin: 15% 10%;
-}
-.page-left {
-  width: 40%;
-}
-.page-right {
-  width: 60%;
-}
-
-.h1-main {
-  font-size: 7rem;
-  color: var(--goldenrod);
-}
-
-.h2-main {
-  font-size: 4rem;
-  color: var(--goldenrod);
-}
-
-.main-links {
-  height: 12rem;
-  width: 80%;
-  /* margin: auto; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.main-links a {
-  text-decoration: none;
-  color: whitesmoke;
-  transition: all 0.3s ease;
-}
-
-.main-links a:hover {
-  font-size: 120%;
-  transition: all 0.3s ease;
-}
-.resume-link {
-  background-color: var(--red);
-  height: 140px;
-  width: 140px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  text-align: center;
-}
-.myWork-link {
-  background-color: var(--turquoise);
-  height: 140px;
-  width: 140px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  text-align: center;
-}
-.mySkill-link {
-  background-color: var(--goldenrod);
-  height: 140px;
-  width: 140px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  text-align: center;
-}
-
-.main-paragraph {
-  color: var(--gainsboro);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.6;
-  width: 90%;
-  display: block;
-  margin-top: 10px;
-  background: rgba (0, 0, 0, 0.8);
-  backdrop-filter: blur(10px);
-}
-
-footer {
-  width: 100%;
-  height: 6rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #151111a3;
-  color: var(--gainsboro);
-}
-
-.icons {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 0;
-  margin-top: 10px;
-}
-
-.icon {
-  width: 50px;
-  list-style-type: none;
-}
-
-.icon-img {
-  width: 50%;
-}
-
-#container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
 .underConstruction {
   width: 100%;
 }
 
 /* %Projects HTML styling */
+
+section {
+  width: 90%;
+  margin: 3rem auto;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  background: rgba (0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.carousel-image {
+  width: 40%;
+  box-shadow: 1px 1px 10px 5px rgba(66, 66, 66, 0.745);
+}
+
+.project-name {
+  font-family: 'Alegreya Sans SC';
+  color: var(--gainsboro);
+  font-size: 2rem;
+  line-height: 3;
+}
+
+.project-name a:link,
+.project-name a:visited {
+  color: var(--gainsboro);
+}
+
 .projects-navbar {
   font-family: 'Alegreya Sans SC';
   width: 90%;
@@ -238,11 +272,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.projects-title {
-  color: var(--goldenrod);
-  width: 30%;
 }
 
 .projects-navlinks {
@@ -266,27 +295,9 @@ footer {
   color: var(--turquoise);
 }
 
-section {
-  width: 90%;
-  margin: 3rem auto;
-  padding: 2%;
-  display: flex;
-  align-items: center;
-  gap: 5%;
-  background: rgba (0, 0, 0, 0.8);
-  backdrop-filter: blur(10px);
-}
-
-.project-name {
-  font-family: 'Alegreya Sans SC';
-  color: var(--gainsboro);
-  font-size: 2rem;
-  line-height: 3;
-}
-
-.project-name a:link,
-.project-name a:visited {
-  color: var(--gainsboro);
+.projects-title {
+  color: var(--goldenrod);
+  width: 30%;
 }
 
 .project-description {
@@ -296,9 +307,17 @@ section {
   line-height: 1.6;
 }
 
-.carousel-image {
-  width: 40%;
-  box-shadow: 1px 1px 10px 5px rgba(66, 66, 66, 0.745);
+.technologies {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  color: var(--goldenrod);
+}
+
+.technologies li {
+  flex-basis: 20%;
 }
 
 .thumbnails {
@@ -320,30 +339,19 @@ section {
   cursor: pointer;
 }
 
-.technologies {
-  margin-top: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  list-style-type: none;
-  color: var(--goldenrod);
-}
-
-.technologies li {
-  flex-basis: 20%;
-}
-
 /* !Breakpoints for Tablets and Small Laptops */
 @media only screen and (max-width: 960px) {
-  .resume-link {
+  .mySkill-link {
     height: 90px;
     width: 90px;
   }
+
   .myWork-link {
     height: 90px;
     width: 90px;
   }
-  .mySkill-link {
+
+  .resume-link {
     height: 90px;
     width: 90px;
   }
@@ -355,106 +363,6 @@ section {
     width: 100vw;
     height: auto;
   }
-  .logo {
-    display: block;
-    width: 100%;
-  }
-  .name {
-    font-size: 26px;
-    font-weight: 700;
-    margin-left: 1rem;
-  }
-
-  .position {
-    margin-left: 1rem;
-    font-size: 12px;
-    font-weight: 700;
-  }
-
-  .toggle-button {
-    display: flex;
-  }
-
-  .navbar-links {
-    display: none;
-    width: 100%;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar-links ul {
-    width: 100%;
-    margin: auto;
-    flex-direction: column;
-  }
-
-  .navbar-links li {
-    text-align: center;
-  }
-  .navbar-links li a {
-    padding: 0.7rem 1rem;
-  }
-
-  .navbar-links.active {
-    display: flex;
-  }
-
-  main {
-    flex-direction: column;
-  }
-
-  .page-left {
-    width: 80%;
-  }
-  .page-right {
-    width: 80%;
-  }
-
-  #profile-pic {
-    width: 80%;
-  }
-
-  .h1-main {
-    text-align: center;
-    font-size: 4rem;
-  }
-
-  .h2-main {
-    text-align: center;
-    font-size: 2rem;
-  }
-
-  .main-links {
-    height: 12rem;
-    width: 80%;
-    margin: auto;
-  }
-
-  .resume-link {
-    height: 80px;
-    width: 80px;
-    font-size: 1rem;
-  }
-
-  .mySkill-link {
-    height: 80px;
-    width: 80px;
-    font-size: 1rem;
-  }
-
-  .myWork-link {
-    height: 80px;
-    width: 80px;
-    font-size: 1rem;
-  }
-
-  .main-paragraph {
-    width: 100%;
-    margin: auto;
-  }
 
   footer {
     margin-top: 1.5rem;
@@ -462,7 +370,15 @@ section {
     flex-direction: column;
   }
 
-  .footer-column-top {
+  main {
+    flex-direction: column;
+  }
+
+  #profile-pic {
+    width: 80%;
+  }
+
+  .footer-column-bottom {
     margin-top: 1rem;
     text-align: center;
     width: 95%;
@@ -479,7 +395,8 @@ section {
     justify-content: space-around;
     align-items: center;
   }
-  .footer-column-bottom {
+
+  .footer-column-top {
     margin-top: 1rem;
     text-align: center;
     width: 95%;
@@ -488,6 +405,102 @@ section {
     align-items: center;
   }
 
+  .h1-main {
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  .h2-main {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .logo {
+    display: block;
+    width: 100%;
+  }
+  .name {
+    font-size: 26px;
+    font-weight: 700;
+    margin-left: 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.7rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .main-links {
+    height: 12rem;
+    width: 80%;
+    margin: auto;
+  }
+
+  .main-paragraph {
+    width: 100%;
+    margin: auto;
+  }
+
+  .mySkill-link {
+    height: 80px;
+    width: 80px;
+    font-size: 1rem;
+  }
+
+  .myWork-link {
+    height: 80px;
+    width: 80px;
+    font-size: 1rem;
+  }
+
+  .page-left {
+    width: 80%;
+  }
+
+  .page-right {
+    width: 80%;
+  }
+
+  .position {
+    margin-left: 1rem;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .resume-link {
+    height: 80px;
+    width: 80px;
+    font-size: 1rem;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  /* Project HTML Styling */
   #container {
     height: auto;
     display: flex;
@@ -495,7 +508,7 @@ section {
     justify-content: space-between;
   }
 
-  #job-costing {
+  #e-birds {
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -507,10 +520,15 @@ section {
     gap: 3rem;
   }
 
-  #e-birds {
+  #job-costing {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+  }
+
+  .carrousel-image {
+    width: 80%;
+    order: 3;
   }
 
   .project-name {
@@ -526,10 +544,5 @@ section {
     width: 80%;
     margin: auto;
     flex-wrap: wrap;
-  }
-
-  .carrousel-image {
-    width: 80%;
-    order: 3;
   }
 }
