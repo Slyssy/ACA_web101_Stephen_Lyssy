@@ -267,7 +267,7 @@ section {
 
 .projects-navbar {
   font-family: 'Alegreya Sans SC';
-  width: 90%;
+  width: 80%;
   margin: 2rem auto;
   display: flex;
   justify-content: space-between;
@@ -277,13 +277,17 @@ section {
 .projects-navlinks {
   width: 70%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   font-size: 1.6rem;
   color: var(--gainsboro);
   list-style-type: none;
+  gap: 2em;
 }
 
+.project-link {
+  flex-basis: 100px;
+}
 .projects-navlinks li a:link,
 .projects-navlinks li a:visited {
   color: var(--gainsboro);
@@ -503,6 +507,7 @@ section {
   /* Project HTML Styling */
   #container {
     height: auto;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -538,11 +543,21 @@ section {
     font-size: 1.2rem;
     text-align: center;
   }
+
+  .projects-navbar {
+    justify-content: space-around;
+  }
+  .projects-navlinks {
+    font-size: 1rem;
+  }
   .project-paragraph {
     width: 80%;
     margin: auto;
   }
 
+  .projects-title {
+    display: none;
+  }
   .technologies {
     width: 80%;
     margin: auto;
