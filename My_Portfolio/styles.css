@@ -317,7 +317,7 @@ section {
 }
 
 .technologies li {
-  flex-basis: 20%;
+  flex-basis: 33.3%;
 }
 
 .thumbnails {
@@ -528,9 +528,12 @@ section {
 
   .carrousel-image {
     width: 80%;
-    order: 3;
+    order: 1;
   }
 
+  .project-description {
+    order: 2;
+  }
   .project-name {
     font-size: 1.2rem;
     text-align: center;
