@@ -352,7 +352,7 @@ form {
 
 form {
   background-color: rgba(49, 49, 49, 0.6);
-  border-radius: 5px;
+  border-radius: 10px;
   color: #333;
   font-family: sans-serif;
   line-height: 1.5;
@@ -368,19 +368,25 @@ input[type='text'] {
   background-color: var(--gainsboro);
   height: 2.5rem;
   width: 80%;
-  /* margin: 1.25rem auto; */
   padding: 0.8rem;
-  /* box-shadow: 0 0 15px 4px; */
-  /* rgba(0,0,0,0.06); */
   border-radius: 10px;
 }
 
+input[type='text']:focus {
+  outline-color: var(--goldenrod);
+}
 textarea {
   font-family: sans-serif;
   font-size: 1rem;
+  width: 80%;
+  height: 50%;
   background-color: var(--gainsboro);
   border-radius: 10px;
   padding: 1rem;
+}
+
+textarea:focus {
+  outline-color: var(--goldenrod);
 }
 
 #contact-submit {
@@ -401,6 +407,11 @@ textarea {
   font-size: 1.5rem;
   transition: font-size 0.1s ease;
 }
+
+.container {
+  height: 80vh;
+}
+
 /* !Breakpoints for Tablets and Small Laptops */
 @media only screen and (max-width: 960px) {
   .mySkill-link {
@@ -620,5 +631,19 @@ textarea {
     width: 80%;
     margin: auto;
     flex-wrap: wrap;
+  }
+
+  form {
+    width: 100%;
+    padding: 0.5rem;
+    max-width: 100%;
+  }
+
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    width: 90%;
   }
 }
