@@ -424,6 +424,16 @@ textarea:focus {
   height: 80vh;
 }
 
+/* % Thank You Page */
+.thanks {
+  color: var(--goldenrod);
+  font-size: 46px;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /* !Breakpoints for Tablets and Small Laptops */
 @media only screen and (max-width: 960px) {
   .mySkill-link {
@@ -657,5 +667,9 @@ textarea:focus {
 
   .container {
     width: 90%;
+  }
+
+  .thanks {
+    font-size: 24px;
   }
 }
