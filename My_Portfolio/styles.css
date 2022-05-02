@@ -364,6 +364,18 @@ form {
   align-items: center;
 }
 
+input[type='email'] {
+  background-color: var(--gainsboro);
+  height: 2.5rem;
+  width: 80%;
+  padding: 0.8rem;
+  border-radius: 10px;
+}
+
+input[type='email']:focus {
+  outline-color: var(--goldenrod);
+}
+
 input[type='text'] {
   background-color: var(--gainsboro);
   height: 2.5rem;
